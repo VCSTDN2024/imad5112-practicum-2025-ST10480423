@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Input">
+
+    <LinearLayout
+        android:layout_width="318dp"
+        android:layout_height="572dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496">
+
+        <EditText
+            android:id="@+id/songET"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Song title"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/artistET"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Artist's Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/ratingET"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Rating 1-5"  />
+
+        <EditText
+            android:id="@+id/commentET"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Comments"  />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="@color/black"
+            android:text="View" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="@color/black"
+            android:text="Clear" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
